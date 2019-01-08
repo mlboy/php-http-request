@@ -92,4 +92,17 @@ Prepares a file for upload. To be used inside the parameters declaration for a r
   
 * Http/request::Multipart($data, $files = false);
   
+#### Response 
+
+* $response->status();
+
+get response http status (int)
+
+* $response->body();
+
+get response http body
+
+* $response->data();
+
+get response http body with json_decode
 
