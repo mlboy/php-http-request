@@ -6,31 +6,43 @@ php http request for curl
 #### COMMON OPTION
 
 * Http/request::addOpts($key,$val = null);
+
+  add curl opts
+
 * Http/request::setOpts($key,$val = null);
-set a curl opts
+
+  set a curl opts
 
 * Http/request::setTimeout($timeMS);
+
   set curl timeout ms
 
 * Http/request::setConnectTimeout($timeMS);
+
   set curl connect timeout ms
   
 * Http/request::setVerify($Peer = true,$Host = true);
+
     set ssh config verifyPeer and verifyHost
 
 * Http/request::setCookie($cookie);
+
    set cookie jar with string
    
 * Http/request::cookieFile($cookieFile);
+
   set cookie jar with cookie file
 
 * Http/request::auth($username = '', $password = '', $method = CURLAUTH_BASIC);
+
   set auth (basic)
 
 * Http/request::proxy($address, $port = 1080, $type = CURLPROXY_HTTP, $tunnel = false);
+
   set proxy for client
  
 * Http/request::proxyAuth($username = '', $password = '', $method = CURLAUTH_BASIC);
+
   set proxy auth for client
 
 #### GET METHOD
