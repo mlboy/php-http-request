@@ -106,6 +106,11 @@ get response http body
 
 get response http body with json_decode
 
+#### Error Code 
+
+if stauts <= 0 then body return a error msg and stauts means curl error code
+
+
 ### DEMO
 
 ```php
@@ -117,3 +122,5 @@ echo $resp->status();
 echo "\r\n";
 echo $resp->body();
 ```
+
+
