@@ -110,7 +110,8 @@ get response http body with json_decode
 
 ```php
 <?php
-include request.php
+include "request.php"
+Http/request::setTimeout(1500);
 $resp = Http/request::get("https://www.baidu.com");
 echo $resp->status();
 echo "\r\n";
