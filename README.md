@@ -3,7 +3,7 @@ php http request for curl
 
 ## Http request doc
 
-### COMMON OPTION
+#### COMMON OPTION
 
 * Http/request::addOpts($key,$val = null);
 * Http/request::setOpts($key,$val = null);
@@ -33,39 +33,39 @@ set a curl opts
 * Http/request::proxyAuth($username = '', $password = '', $method = CURLAUTH_BASIC);
   set proxy auth for client
 
-### GET METHOD
+#### GET METHOD
 
 $response = Http/request::get($url, $headers = array(),$params=null,$parameters = null, $username = null, $password = null);
 
-### POST METHOD
+#### POST METHOD
 
 $response = Http/request::post($url, $headers = array(),$body=null,$parameters = null, $username = null, $password = null);
 
-### PUT METHOD
+#### PUT METHOD
 
 $response = Http/request::put($url, $headers = array(),$body=null,$parameters = null, $username = null, $password = null);
 
-### PATCH METHOD
+#### PATCH METHOD
 
 $response = Http/request::patch($url, $headers = array(),$body=null,$parameters = null, $username = null, $password = null);
 
-### DELETE METHOD
+#### DELETE METHOD
 
 $response = Http/request::delete($url, $headers = array(), $params = null, $username = null, $password = null)
 
-### OPTIOMS METHOD
+#### OPTIOMS METHOD
 
 $response = Http/request::options($url,$header=[],$params=null,$parameters = null, $username = null, $password = null);
 
-### CONNECT METHOD
+#### CONNECT METHOD
 
 $response = Http/request::connect($url,$header=[],$params=null,$parameters = null, $username = null, $password = null);
 
-### TRACE METHOD
+#### TRACE METHOD
 
 $response = Http/request::trace($url,$header=[],$params=null,$parameters = null, $username = null, $password = null);
 
-### Upload Field
+#### Upload Field
 
 * Http/request::File($filename, $mimetype = '', $postname = '');
 
@@ -76,7 +76,7 @@ Prepares a file for upload. To be used inside the parameters declaration for a r
      @param string $postname the file name
      @return string|\CURLFile
 
-### Multipart Field
+#### Multipart Field
   
 * Http/request::Multipart($data, $files = false);
   
