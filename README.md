@@ -106,3 +106,13 @@ get response http body
 
 get response http body with json_decode
 
+### DEMO
+
+```php
+<?php
+include request.php
+$resp = Http/request::get("https://www.baidu.com");
+echo $resp->status();
+echo "\r\n";
+echo $resp->body();
+```
