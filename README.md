@@ -1,7 +1,7 @@
 # php-http-request
 php http request for curl
 
-## Http request doc
+## Http request
 
 #### COMMON OPTION
 
@@ -92,7 +92,7 @@ Prepares a file for upload. To be used inside the parameters declaration for a r
   
 * Http/request::Multipart($data, $files = false);
   
-#### Response 
+#### Http Response 
 
 * $response->status();
 
