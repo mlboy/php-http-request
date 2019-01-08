@@ -65,9 +65,6 @@ $response = Http/request::connect($url,$header=[],$params=null,$parameters = nul
 
 $response = Http/request::trace($url,$header=[],$params=null,$parameters = null, $username = null, $password = null);
 
-
-## HELP 
-
 ### Upload Field
 
 * Http/request::File($filename, $mimetype = '', $postname = '');
@@ -83,3 +80,4 @@ Prepares a file for upload. To be used inside the parameters declaration for a r
   
 * Http/request::Multipart($data, $files = false);
   
+
